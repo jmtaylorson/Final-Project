@@ -1,0 +1,49 @@
+@import 'https://fonts.googleapis.com/css?family=Lato';
+body {
+font-family: 'Lato', sans-serif;
+  color: white;
+  background-image: url(https://wallpaperscraft.com/image/dark_spots_texture_background_50355_602x339.jpg);
+}
+h1 {
+text-align: center
+}
+h2 {
+  text-align: center;
+}
+p {
+  text-align: center;
+}
+h4 {
+  text-align: center;
+}
+h3 {
+  text-align: center;
+}
+img {
+ display: inline;
+ padding-left: 6%;
+
+}
+ul {
+background-color: #333;
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+}
+li  {
+  float: left;
+}
+li a:hover {
+  background-color: gray;
+}
+li a {
+  display: inline;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+div {
+  background-color: darkslategray;
+}
