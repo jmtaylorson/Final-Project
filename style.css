@@ -3,9 +3,47 @@
 
 body, html{
   height: 100%;
- 
+ text-align: center;
 	font-family: 'Lato', sans-serif;
 }
+.enjoy-css {
+    display: inline-block;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    cursor: pointer;
+   align-content: center;
+    border: none;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    font: normal normal bold 20px/40px "Baumans", Helvetica, sans-serif;
+    color: black;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    background: rgb(221, 221, 221);
+    -webkit-box-shadow: 0 1px 0 0 rgb(119, 119, 119), 0 2px 0 0 rgb(119, 119, 119), 0 3px 0 0 rgb(119, 119, 119), 0 4px 0 0 rgb(119, 119, 119), 0 5px 0 0 rgb(119, 119, 119), 0 6px 0 0 rgb(119, 119, 119), 0 0 5px 0 rgba(0, 0, 0, 0.0980392), 0 1px 3px 0 rgba(0, 0, 0, 0.298039), 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 5px 10px 0 rgba(0, 0, 0, 0.247059), 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 20px 20px 0 rgba(0, 0, 0, 0.14902);
+    box-shadow: 0 1px 0 0 rgb(119, 119, 119), 0 2px 0 0 rgb(119, 119, 119), 0 3px 0 0 rgb(119, 119, 119), 0 4px 0 0 rgb(119, 119, 119), 0 5px 0 0 rgb(119, 119, 119), 0 6px 0 0 rgb(119, 119, 119), 0 0 5px 0 rgba(0, 0, 0, 0.0980392), 0 1px 3px 0 rgba(0, 0, 0, 0.298039), 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 5px 10px 0 rgba(0, 0, 0, 0.247059), 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 20px 20px 0 rgba(0, 0, 0, 0.14902);
+    text-shadow: 0 1px 0 #FFFFFF;
+  }
+  
+  .enjoy-css:hover {
+    background: #FFFFFF;
+  }
+  
+  .enjoy-css:active {
+    margin: 6px 0 0;
+    background: rgb(221, 221, 221);
+    -webkit-box-shadow: 0 -1px 10px 0 rgba(0, 0, 0, 0.247059), 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 14px 20px 0 rgba(0, 0, 0, 0.14902);
+    box-shadow: 0 -1px 10px 0 rgba(0, 0, 0, 0.247059), 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 14px 20px 0 rgba(0, 0, 0, 0.14902);
+  }
+  
+  .enjoy-css:focus {
+    text-align: center;
+    background: rgb(221, 221, 221);
+  }
+
+
+
 
 .container{
   display: block;

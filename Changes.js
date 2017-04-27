@@ -4,36 +4,33 @@
 http://html5.litten.com/graphing-data-in-the-html5-canvas-element-part-iv-simple-pie-charts/
 */
 var adidas = 1;
-var nike = 1;
-var vans = 1;
+var nike = 2;
+var vans = 3;
 function shoes() { 
 var currentSelection = document.querySelector("input[name='selector']:checked").value;
   if (currentSelection=="Vans"){
    vans = vans + 1
-   myData = [vans, nike, adidas]
-   myNumber = [vans,nike,adidas]
+   myData2 = [vans, nike, adidas]
    plotData()
   }else if(currentSelection=="Nike") {
   nike = nike+1
-   myData = [vans, nike, adidas]
-   myNumber = [vans,nike,adidas]
+   myData2 = [vans, nike, adidas]
    plotData()
   }else if(currentSelection=="Adidas") {
   adidas = adidas + 1
-   myData = [vans, nike, adidas]
-   myNumber = [vans,nike,adidas]
+   myData2 = [vans, nike, adidas]
    plotData()
   }
 }
 
 var myColor = ["#39ca74","#e54d42","#f0c330","#3999d8","#35485d"];
-var myData = [vans,nike,adidas];
+var myData2 = [vans,nike,adidas];
 var myLabel = ["Vans","Nike","Adidas"];
 var myNumber = [vans,nike,adidas];
 function getTotal(){
   var myTotal = 0;
-  for (var j = 0; j < myData.length; j++) {
-    myTotal += (typeof myData[j] == 'number') ? myData[j] : 0;
+  for (var j = 0; j < myData2.length; j++) {
+    myTotal += (typeof myData2[j] == 'number') ? myData2[j] : 0;
   }
   return myTotal;
 }
@@ -52,11 +49,11 @@ function plotData() {
   ctx = canvas.getContext("2d");
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-  for (var i = 0; i < myData.length; i++) {
+  for (var i = 0; i < myData22.length; i++) {
     ctx.fillStyle = myColor[i];
     ctx.beginPath();
     ctx.moveTo(x,y);
-    ctx.arc(x,y,r,lastend,lastend+(Math.PI*2*(myData[i]/myTotal)),false);
+    ctx.arc(x,y,r,lastend,lastend+(Math.PI*2*(myData22[i]/myTotal)),false);
     ctx.lineTo(x,y);
     ctx.fill();
     
@@ -67,9 +64,9 @@ function plotData() {
     var last = 0;
     var flip = 0;
     var textOffset = 0;
-    var precentage = (myData[i]/myTotal)*100;
-    start = getPoint(x,y,r-20,(lastend+(Math.PI*2*(myData[i]/myTotal))/2));
-    end = getPoint(x,y,r+20,(lastend+(Math.PI*2*(myData[i]/myTotal))/2));
+    var precentage = (myData2[i]/myTotal)*100;
+    start = getPoint(x,y,r-20,(lastend+(Math.PI*2*(myData2[i]/myTotal))/2));
+    end = getPoint(x,y,r+20,(lastend+(Math.PI*2*(myData2[i]/myTotal))/2));
     if(start[0] <= x)
     {
       flip = -1;
@@ -87,10 +84,10 @@ function plotData() {
     ctx.lineWidth   = 2;
     ctx.stroke();
     // The labels
-    ctx.font="15px Arial";
+    ctx.font="17px Arial";
     ctx.fillText(myLabel[i]+"  " +myNumber[i]+ "  "+precentage.toFixed(2)+"%",end[0]+textOffset,end[1]-4); 
     // Increment Loop
-    lastend += Math.PI*2*(myData[i]/myTotal);
+    lastend += Math.PI*2*(myData2[i]/myTotal);
     
   }
 }
