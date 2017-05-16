@@ -1,13 +1,24 @@
-@import url('https://fonts.googleapis.com/css?family=Lato');
+@import 'https://fonts.googleapis.com/css?family=Lato';
 @import url('http://fonts.googleapis.com/css?family=Lato');
 
-body, html{
+body {
   height: 100%;
- text-align: center;
+ 
 	font-family: 'Lato', sans-serif;
     background-image: url(http://www.designbolts.com/wp-content/uploads/2013/02/Light-aluminum-Grey-Seamless-Pattern-For-Website-Background.jpg);
 }
-
+.login {
+   text-align: center;
+    padding-top: 100
+}
+p {
+text-align: left;
+    padding-left: 400;
+}
+h1 {
+text-align: center;
+    color: darkslategray;
+}
 .enjoy-css {
     display: inline-block;
     -webkit-box-sizing: content-box;

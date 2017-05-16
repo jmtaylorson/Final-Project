@@ -1,35 +1,35 @@
 
 
-/* <3 
+/* <3  
 http://html5.litten.com/graphing-data-in-the-html5-canvas-element-part-iv-simple-pie-charts/
 */
-var adidas = 1;
-var nike = 1;
-var vans = 1;
+var neither = 1;
+var vanilla = 1;
+var chocolate = 1;
 function shoes() { 
 var currentSelection = document.querySelector("input[name='selector']:checked").value;
-  if (currentSelection=="Vans"){
-   vans = vans + 1
-   myData = [vans, nike, adidas]
-   myNumber = [vans,nike,adidas]
+  if (currentSelection=="Chocolate"){
+   chocolate = chocolate + 1
+   myData = [chocolate, vanilla, neither]
+   myNumber = [chocolate,vanilla,neither]
    plotData()
-  }else if(currentSelection=="Nike") {
-  nike = nike+1
-   myData = [vans, nike, adidas]
-   myNumber = [vans,nike,adidas]
+  }else if(currentSelection=="Vanilla") {
+  vanilla = vanilla+1
+   myData = [chocolate, vanilla, neither]
+   myNumber = [chocolate,vanilla,neither]
    plotData()
-  }else if(currentSelection=="Adidas") {
-  adidas = adidas + 1
-   myData = [vans, nike, adidas]
-   myNumber = [vans,nike,adidas]
+  }else if(currentSelection=="Neither") {
+  neither = neither + 1
+   myData = [chocolate, vanilla, neither]
+   myNumber = [chocolate,vanilla,neither]
    plotData()
   }
 }
 
 var myColor = ["#39ca74","#e54d42","#f0c330","#3999d8","#35485d"];
-var myData = [vans,nike,adidas];
-var myLabel = ["Vans","Nike","Adidas"];
-var myNumber = [vans,nike,adidas];
+var myData = [chocolate,vanilla,neither];
+var myLabel = ["Chocolate","Vanilla","Neither"];
+var myNumber = [chocolate,vanilla,neither];
 function getTotal(){
   var myTotal = 0;
   for (var j = 0; j < myData.length; j++) {
